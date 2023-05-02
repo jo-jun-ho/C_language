@@ -1,0 +1,43 @@
+#include "dino_screen.h"
+#include <stdio.h>
+
+int main()
+{
+	print_title_screen();
+	int game_state=1;
+	int input=0;
+	while(game_state)
+	{
+		printf("input(1~3)>");
+		scanf("%d",&input);
+		if(input==3)
+		{
+			game_state=0;
+		}
+		else if(input==2)
+		{
+			how_to_play();
+			while(game_state)
+			{
+				printf("input(1~2)>");
+				scanf("%d",&input);
+				if(input==1)
+				{
+					print_title_screen();
+					break;
+				}
+				else if(input==2)
+				{
+					how_to_play();
+					printf("Return to Menu?\n");
+				}
+				else
+				{	
+					printf("Please enter again");
+					game_state=1;
+				}
+			}
+		}
+	}
+	return 0;
+}
