@@ -6,7 +6,7 @@ int main()
 	int i=0;
 	while(i<500)
 	{
-		screen[i]='*';
+		screen[i]='0';
 		i=i+1;
 	}
 	screen[464]='\0';
