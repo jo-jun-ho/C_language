@@ -1,3 +1,11 @@
 #include <stdio.h>
 
-int screen();
+int clearbuffer();
+
+int stringbuffer();
+
+int titlebuffer();
+
+int how_to_playbuffer();
+
+int gameoverbuffer();

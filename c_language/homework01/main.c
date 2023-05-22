@@ -1,27 +1,40 @@
 #include <stdio.h>
 #include "screen.h"
+#include <stdlib.h>
 
 int main()
 {
-	int input=0;
+	char screen[33*12+1];
+	int width=32;
+	int height=12;
 	int game_state=1;
-	screen();
+
+	int input=0;
+
 	while(game_state)
 	{
-		scanf("%d",&input);
-		if(input==2)
+		clearbuffer(screen,width,height);
+		titlebuffer(screen, width, height);
+		
+		printf("%s", screen);
+		system("cls");
+		printf("%s\ninput>",screen);
+		scanf("%d", &input);
+		
+		if(input==3)
 		{
-			how_to_play();
+			clearbuffer(screen, width, height);
+			gameoverbuffer(screen, width, height);
+			printf("%s",screen);
+			system("cls");
+			game_state=0;
 		}
-		else if(input==3)
+		else if(input==2)
 		{
-			exit();
-		}
-		else
-		{
-			printf("try again.");
-			game_state=1;
+			how_to_playbuffer(screen, width, height);
+			printf("%s",screen);
 		}
 	}
+
 	return 0;
 }
