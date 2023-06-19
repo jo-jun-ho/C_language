@@ -1,0 +1,7 @@
+﻿  GameUtil.c
+  main.c
+D:\jjh249275\C_language\c_language\lecture14\lecture14\main.c(34,2): warning C4013: 'SetCursorVisible'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+D:\jjh249275\C_language\c_language\lecture14\lecture14\main.c(49,15): warning C4013: 'getch'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  screen.c
+  코드를 생성하고 있습니다...
+  lecture14.vcxproj -> D:\jjh249275\C_language\c_language\lecture14\lecture14\x64\Debug\lecture14.exe

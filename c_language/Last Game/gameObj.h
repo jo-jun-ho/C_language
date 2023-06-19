@@ -1,0 +1,22 @@
+#pragma once
+
+void Smile_Draw();
+void printprolog();
+void printbedend();
+void paper();
+void attack();
+void numberchoice();
+void secondchoose();
+void something();
+void secondendmessage();
+void anything();
+void treasurebox();
+void lastbattle();
+void toolate();
+void battlescene();
+void battlewinscene();
+void battlelosescene();
+void bossattack();
+void bossbattlescene();
+void bossbattlewinscene();
+void bossbattlelosescene();
